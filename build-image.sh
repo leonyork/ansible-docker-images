@@ -34,4 +34,4 @@ docker-compose build
 docker-compose run ansible --version
 
 # Push to the docker registry
-#docker-compose push
+docker-compose push
