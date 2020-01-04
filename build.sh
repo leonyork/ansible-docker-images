@@ -6,8 +6,8 @@
 #######################################################################
 set -eux
 
-number_of_ansible_releases=1
-number_of_alpine_releases=1
+number_of_ansible_releases=5
+number_of_alpine_releases=5
 
 # Creates tags of the form {ANSIBLE_VERSION}-alpine-{ALPINE_VERSION} (e.g. 2.9.2-alpine-3.11.0)
 # First gets the last $number_of_alpine_releases alpine tags where the tag looks like a version number (there were some odd tags that look like dates)
