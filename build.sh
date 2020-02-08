@@ -20,7 +20,7 @@ docker run leonyork/docker-tags library/alpine \
         sh -c "docker run leonyork/pypi-releases ansible \
         | grep -E '^[0-9.]\.[0-9.]+$' \
         | tail -n $number_of_ansible_releases \
-        | xargs -I{ANSIBLE_VERSION} -n1 sh build-image.sh {ALPINE_VERSION} {ANSIBLE_VERSION} {ANSIBLE_VERSION}-alpine-{ALPINE_VERSION} || exit 255" || exit 255
+        | xargs -I{ANSIBLE_VERSION} -n1 sh build-image.sh {ALPINE_VERSION} {ANSIBLE_VERSION} {ANSIBLE_VERSION}-alpine{ALPINE_VERSION} || exit 255" || exit 255
 
 # Creates tags of the form {ANSIBLE_VERSION}-alpine (e.g. 2.9.2-alpine)
 # Gets the last $number_of_ansible_releases of non-release candidate versions of Ansible and creates an image using the latest alpine image
