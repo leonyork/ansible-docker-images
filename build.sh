@@ -8,7 +8,7 @@ set -eux
 
 # Number of releases to go back from the latest version
 number_of_ansible_releases=3
-number_of_alpine_releases=3
+number_of_alpine_releases=2
 
 # Creates tags of the form {ANSIBLE_VERSION}-alpine-{ALPINE_VERSION} (e.g. 2.9.2-alpine-3.11.0)
 # First gets the last $number_of_alpine_releases alpine tags where the tag looks like a version number (there were some odd tags that look like dates)
